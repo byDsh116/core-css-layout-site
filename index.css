@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Montserrat:wght@100;300&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #111426;
+  font-family: "Jost", sans-serif;
+}
+
+.header {
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0) 0%,
+    rgb(9 21 74) 0%,
+    rgb(23 24 34) 90%
+  );
+  border-bottom-color: #090c3066;
+  border-bottom-width: 5px;
+  border-bottom-style: groove;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header_wrapper {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 40%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav_span {
+  color: #4cc2f0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 19px;
+  margin-left: 150px;
+}
+
+.nav_link {
+  margin-right: 35px;
+  color: rgb(76 194 239);
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.nav_link:hover {
+  color: #1e528f;
+}
+
+.nav_link.active {
+  color: #1e528f;
+}
+
+.intro {
+  background-image: url(/images/nadpis_podsvetka_neon_118059_3840x2160.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.intro:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(39 39 59 / 35%);
+  z-index: 1;
+}
+
+.intro_wrapper {
+  min-height: 600px;
+  padding: 45px;
+  margin: 14px;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+}
+
+.intro_block {
+  padding: 5px;
+  max-width: 565px;
+  background-color: #14172b96;
+}
+
+.intro_title {
+  margin: 0 0 35px;
+  line-height: 1.4px;
+  color: #4cc2f0;
+}
+
+.intro_text {
+  font-size: 18px;
+  color: #4cc2f0;
+  margin-bottom: 0 0 35px;
+}
+
+.intro_actions {
+  display: flex;
+}
+
+.intro_actions .btn-main {
+  margin-right: 20px;
+}
+
+.info_block {
+  display: flex;
+  border-radius: 10px;
+  background-color: #1e528f;
+}
+
+.info_img {
+  border-radius: 10px 0 0 10px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.info_img:after {
+  background-color: rgba(154, 154, 191, 0.55);
+}
+
+.info_title {
+  margin-bottom: 15px;
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info_text {
+  max-width: 500px;
+  font-size: 18px;
+  color: aliceblue;
+  line-height: 1.45;
+}
+
+.info_img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.info_img-wrapper:after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.point {
+  color: #7cdaff;
+}
